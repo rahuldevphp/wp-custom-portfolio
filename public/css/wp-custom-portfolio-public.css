@@ -1,0 +1,96 @@
+.wp-custom-portfolio-post-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+.portfolio-item {
+  cursor: pointer;
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+  width: 50%;
+}
+
+.portfolio-popup-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100% !important;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-popup-content {
+  position: relative;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 600px;
+  text-align: center;
+  max-height: calc(100vh - 210px);
+  overflow-y: auto;
+}
+
+.portfolio-popup-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.close-popup {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.portfolio-item p {
+  font-size: 1rem;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.portfolio-item p:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.5em;
+  border-top: 1px solid black;
+  z-index: -1;
+}
+
+.portfolio-item img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.portfolio-item h3 {
+  margin-bottom: 5px;
+}
+
+.portfolio-item p {
+  margin-bottom: 0;
+}
+button#load-more-button {
+    font-style: normal;
+    cursor: pointer;
+    font-weight: 500;
+    padding: 10px;
+    margin: 10px;
+    background-color: blanchedalmond;
+}
+div#load-more-container {
+    text-align: center;
+}
+.hide-section{
+  display: none !important;
+}
